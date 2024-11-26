@@ -1,0 +1,44 @@
+Dentro do arquivo de html: 
+
+<head>
+<link rel="stylesheet" href="(local do arquivo de css)">
+</head>
+
+------------------------------------------------------
+
+.(class desejada) - É utilizado para chamar variáveis do tipo class no HTML
+
+* - representa todos os elementos da página. Geralmente é feito um "reset" com esse comando para padronizar todos os elementos para diferentes navegadores
+
+----
+
+--------- FORMATAÇÃO DA ESTRUTURA DO TEXTO ---------
+
+padding (tamanho px (C) (D) (B) (E)) | representa a "caixa" interna de um elemento 
+
+background-color | representa a cor de fundo da caixa do elemento selecionado
+
+display | muda a forma de que um texto é alinhado
+	- inline: alinha o texto em uma única linha
+	- flex: 
+
+margin left: (tamanho px) | adiciona uma margem (espaço) no lado esquerdo do texto. 
+
+width(largura)
+
+
+--------- FORMATAÇÃO DA FORMA DO TEXTO ---------
+
+color: define a cor do texto
+
+font-size((tamanho desejado) px): muda o tamanho da font para o tamanho desejado
+
+text-decoration: define uma propriedade visual para o texto desejado
+	- none: retira todas as propriedades visuais
+
+
+
+
+
+
+
