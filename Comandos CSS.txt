@@ -36,6 +36,12 @@ font-size((tamanho desejado) px): muda o tamanho da font para o tamanho desejado
 text-decoration: define uma propriedade visual para o texto desejado
 	- none: retira todas as propriedades visuais
 
+    
+
+
+
+    background-color: #1f1f1f;
+    background-color: #3b3a3a;
 
 
 
