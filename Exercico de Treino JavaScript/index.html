@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercico_HTML_JS</title>
+    <link rel="stylesheet" href="./main.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Exercício de JavaScript</h1>
+        <h2>Instruções</h2>
+        <ul>
+            <li>Insira dois números</li>
+            <li>Para o formulário ser válido, <b>o primeiro número deve ser menor que o segundo número</b></li>
+            <li>Caso a ordem de cima não se cumpra, irá aparecer uma mensagem de erro</li>
+            <li>Caso tudo ocorra como deve ser, irá aparecer uma mensagem de sucesso</li>
+        </ul>
+        <div class="formsdiv">
+            <form id="form">
+                <div class="numeros">
+                    <input type="number" id="numero1" required placeholder="Insira o primeiro número"/>
+                    <input type="number" id="numero2" required placeholder="Insira o segundo número"/>
+                </div>
+                <div class="botao">
+                    <button type="submit" id="btn">Enviar</button>
+                </div>
+            </form>
+            <p class="sucess-message"></p>
+            <p class="error-message">
+                O segundo número deve ser maior que o primerio número
+            </p>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
