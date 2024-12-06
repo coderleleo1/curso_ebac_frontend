@@ -40,7 +40,6 @@ body {
 
 input {
     max-width: 100%;
-    display: flexbox;
 }
 
 
@@ -64,19 +63,20 @@ button:hover {
     background-color: rgb(156, 255, 255);;
 }
 
-.sucess-message {
+#sucess-message {
     background-color: #27ae60;
     padding: 16px;
     color: #fff;
     display: none;
+    font-size: 14px;
 }
 
-.error-message { 
-    padding: 8px;
+#error-message { 
+    padding: 16px;
     background-color: rgb(255, 78, 78);
     color: white;
     margin-bottom: 8px;
-    font-size: 12px;
+    font-size: 14px;
     display: none;
 }
 
