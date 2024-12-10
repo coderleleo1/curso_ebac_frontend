@@ -49,7 +49,7 @@ function atualizaTabela() {
 function atualizaMediaFinal(){            // Essa função atualiza o valor da média final na tabela 
     const mediaFinal = calculaMediaFinal();  // aqui eu chamo a função que calcula a média das notas                                                               
 
-    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2);                // Chamo a parte que está escrita a média das notas na tabela 
+    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2);                // Chamo a parte que está escrita a média das notas na tabela. toFixed é um comando para limitar as casas decimais de um número, no caso, foi para duas
     document.getElementById('media-final-resultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado; // Aqui chamo a parte se está aprovado ou não, fazendo uma função SE a 
 }                                                                                                            // média final é maior ou igual a 7, se sim o valor mostra Aprovado
 
