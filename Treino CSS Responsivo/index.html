@@ -23,8 +23,33 @@
             background-color: red;
         }
 
+        li {
+            list-style-type: none;
+            width: 100%;      
+        }
 
+        li img {
+            width: 100%;
+        }
 
+        @media screen and (min-width: 1366px) {   /* Altera a regra do CSS quando uma tela de um tamanho especificado acessar o site. */
+            li {
+                max-width: 33%;
+                float: left;     /* Faz os itens ficarem um do lado do outro, parecido com display:flex e display:inline */
+            }
+        }
+
+        @media screen and (orientation: portrait) and (max-width: 640px) { /* portrait é na vertical, landscape na horizontal. */
+            body {
+                background-color: red;
+            }
+        }
+
+        @media print {   /* print é pra impressão da página */
+            h3 {
+                color:red;
+            }
+        }
     </style>
 </head>
 <body>
@@ -39,6 +64,23 @@
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur accusamus hic iure facilis sapiente iste, quas quibusdam magnam quisquam, ad consectetur deserunt distinctio adipisci reiciendis officia ducimus blanditiis, vel reprehenderit?
         </p>
+    </section>
+
+    <section>
+        <ul>
+            <li>
+                <img src="https://img.elo7.com.br/product/685x685/4A29F43/imagem-alta-resolucao-para-quadro-ceu-01-quadro.jpg"/>
+                <h3>Imagem 1</h3>
+            </li>
+            <li>
+                <img src="https://img.elo7.com.br/product/685x685/4A29F43/imagem-alta-resolucao-para-quadro-ceu-01-quadro.jpg"/>
+                <h3>Imagem 2</h3>
+            </li>
+            <li>
+                <img src="https://img.elo7.com.br/product/685x685/4A29F43/imagem-alta-resolucao-para-quadro-ceu-01-quadro.jpg"/>
+                <h3>Imagem 3</h3>
+            </li>
+        </ul>
     </section>
 </body>
 </html>
