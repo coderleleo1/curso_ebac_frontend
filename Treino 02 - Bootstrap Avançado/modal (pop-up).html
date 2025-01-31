@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css"/>
+</head>
+<body>
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Abrir Modal</button>
+    <div class="modal" id="exemplo-modal" data-bs-backdrop="static"> <!-- data-bs-backdrop="static" impede que a modal seja fechada ao clicar fora dela -->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Título da Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt exercitationem iusto laboriosam dolorum ut, corrupti ullam cumque praesentium natus minus fuga, ea amet cum! Dolores, illo! Adipisci explicabo ipsam odit!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function (){ // evento para esperar todo o html ser carregado para executar a função 
+            const modalExemplo = new bootstrap.Modal('#exemplo-modal');
+            setTimeout(function() { // setTimeOut é um comando para adicionar um tempo de espera e falar o que deve acontecer após esse tempo
+                modalExemplo.show();
+            }, 3000); // Representa o tempo de espera para que a função seja executada. O valor representa em MS ou 3 segundos
+        })
+    </script>
+</body>
+</html>
