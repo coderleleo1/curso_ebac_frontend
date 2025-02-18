@@ -1,0 +1,10 @@
+npm init       --->        (cria o arquivo package.json)
+(escrever o nome do pacote)
+ir apertando enter basicamente kkk
+
+npm i --save-dev (nome do pacote) para instalar os arquivos do node
+
+o package-lock.json funciona para evitar que 2 desenvolvedores criem conflitos por estarem trabalhando simultaneamente.
+    - basicamente faz que o ambiente de desenvolvimento fique uniforme
+
+*** É IMPORTANTE QUE SEJA CRIADO UM ARQUIVO .GITIGNORE E ESCREVER DENTRO DELE NODE_MODULES PARA EVITAR QUE O GIT ENVIE TODA A BIBLIOTECA PARA O REPOSITÓRIO NO GIT HUB POR SER MUITO EXTENSO ***
