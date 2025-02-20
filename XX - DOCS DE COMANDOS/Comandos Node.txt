@@ -2,7 +2,7 @@ npm init       --->        (cria o arquivo package.json)
 (escrever o nome do pacote)
 ir apertando enter basicamente kkk
 
-npm i --save-dev (nome do pacote) para instalar os arquivos do node
+npm i --save-dev (ESCREVER O NOME DO PACOTE (TALVEZ SASS)) para instalar os arquivos do node
 
 o package-lock.json funciona para evitar que 2 desenvolvedores criem conflitos por estarem trabalhando simultaneamente.
     - basicamente faz que o ambiente de desenvolvimento fique uniforme
