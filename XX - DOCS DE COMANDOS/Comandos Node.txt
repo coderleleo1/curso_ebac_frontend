@@ -4,6 +4,9 @@ npm init       --->        (cria o arquivo package.json) (escrever o nome do pac
 
 ir apertando enter basicamente se não tiver as informações kkk
 
+escrever no package.json 
+"sass": "sass (nome da pasta desejada)/main.scss (arquivo de entrada, deve já estar criado) (nome da pasta desejada)/main.css -- watch",
+
 npm i --save-dev (ESCREVER O NOME DO PACOTE (TALVEZ SASS)) para instalar os arquivos do node
 
 o package-lock.json funciona para evitar que 2 desenvolvedores criem conflitos por estarem trabalhando simultaneamente.
