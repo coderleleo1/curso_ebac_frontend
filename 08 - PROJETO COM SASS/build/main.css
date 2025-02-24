@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #eee;
+  background-color: #f3f3f3;
 }
 
 .container {
@@ -17,7 +17,7 @@ body {
 
 header {
   padding: 16px 0;
-  background-color: yellow;
+  background-color: #ee5253;
   text-align: center;
 }
 
@@ -27,11 +27,20 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 760px;
+}
+.form-container h2 {
+  font-size: 3em;
+  text-align: center;
 }
 .form-container form {
   width: 100%;
   max-width: 480px;
   margin-top: 40px;
+}
+.form-container form label {
+  font-weight: bold;
+  cursor: pointer;
 }
 .form-container form input {
   padding: 8px;
@@ -40,13 +49,28 @@ header {
   width: 100%;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 3px solid #ee5253;
 }
 .form-container form button {
   padding: 8px;
   display: block;
   margin-bottom: 16px;
   width: 100%;
+  background-color: #ff6b6b;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+.form-container form button:hover {
+  background-color: rgb(255, 30.5, 30.5);
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 80%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
