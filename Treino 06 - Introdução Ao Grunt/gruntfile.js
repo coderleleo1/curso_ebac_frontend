@@ -21,6 +21,10 @@ module.exports = function(grunt){
             less: {
                 files: ['src/styles/**/*.less'], // ** é uma forma de dizer para acessar qualquer pasta. * é uma forma de falar para acessar qualquer arquivo, tudo isso dentro de styles
                 tasks: ['less:development']
+            },
+            html: {
+                files: ['src/index.html'],
+                tasks: ['replace:dev']
             }
         },
         replace: { // plugin de substituição de palavras de um arquivo, por um valor que a gente define
@@ -73,6 +77,7 @@ module.exports = function(grunt){
                 }
             }
         },
+        clean: ['prebuild'],
         sass: {   // CONFIGURAÇÃO PARA UTILIZAR COM O SASS
             dist: {
                 options: {
@@ -103,8 +108,9 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-watch'); // plugin para fazer o grunt "assistir" o arquivo em tempo real e aplicar as mudanças sempre que salvar, não sendo necessário executa-lo sempre
     grunt.loadNpmTasks('grunt-replace'); // plugin para substituir palavras dentro de um arquivo por um valor determinado
     grunt.loadNpmTasks('grunt-contrib-htmlmin'); // plugin para minificar um arquivo html
+    grunt.loadNpmTasks('grunt-contrib-clean'); // plugin para apagar pastas e arquivos temporarios
 
     grunt.registerTask('default', ['watch']); // forma de declarar uma tarefa no terminal
-    grunt.registerTask('build', ['less:production', 'htmlmin:dist', 'replace:dist']);     
+    grunt.registerTask('build', ['less:production', 'htmlmin:dist', 'replace:dist', 'clean']);     
                                                 //    minificação     substituição  
 }
