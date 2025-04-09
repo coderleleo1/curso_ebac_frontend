@@ -36,3 +36,15 @@ input {
   color: #fff;
   border-bottom: 6px solid #fff;
 }
+.resultado {
+  padding: 16px;
+  margin-top: 120px;
+  border: 8px dotted #fff;
+  /* dotted é pontilhado */
+  display: none;
+}
+.resultado span {
+  font-weight: bold;
+  font-size: 3em;
+  display: block;
+}

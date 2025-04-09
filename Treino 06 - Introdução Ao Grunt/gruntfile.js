@@ -34,6 +34,10 @@ module.exports = function(grunt){
                         {
                             match: 'ENDEREÇO_DO_CSS', // PALAVRA QUE IRÁ SER ENCONTRADA E SUBSTITUIDA | É NECESSÁRIO COLOCAR @@ NA FRENTE AONDE A SUBSTITUIÇÃO DEVE ACONTECER
                             replacement: './styles/main.css' // PALAVRA DE SUBSTITUIÇÃO 
+                        },
+                        {
+                            match: 'ENDEREÇO_DO_JS', 
+                            replacement: '../src/scripts/main.js' 
                         }
                     ]
                 },
@@ -52,8 +56,12 @@ module.exports = function(grunt){
                         {
                             match: 'ENDEREÇO_DO_CSS', 
                             replacement: './styles/main.min.css' 
+                        },
+                        {
+                            match: 'ENDEREÇO_DO_JS', 
+                            replacement: './scripts/main.min.js' 
                         }
-                    ]   
+                    ]       
                 },
                 files: [
                     {
@@ -78,6 +86,14 @@ module.exports = function(grunt){
             }
         },
         clean: ['prebuild'],
+        uglify: {
+            target: {
+                files: {
+                    'dist/scripts/main.min.js': 'src/scripts/main.js'
+            //              final                       origem
+                }
+            }
+        },
         sass: {   // CONFIGURAÇÃO PARA UTILIZAR COM O SASS
             dist: {
                 options: {
@@ -109,8 +125,9 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-replace'); // plugin para substituir palavras dentro de um arquivo por um valor determinado
     grunt.loadNpmTasks('grunt-contrib-htmlmin'); // plugin para minificar um arquivo html
     grunt.loadNpmTasks('grunt-contrib-clean'); // plugin para apagar pastas e arquivos temporarios
+    grunt.loadNpmTasks('grunt-contrib-uglify'); // compressor de JavaScript
 
     grunt.registerTask('default', ['watch']); // forma de declarar uma tarefa no terminal
-    grunt.registerTask('build', ['less:production', 'htmlmin:dist', 'replace:dist', 'clean']);     
+    grunt.registerTask('build', ['less:production', 'htmlmin:dist', 'replace:dist', 'clean', 'uglify']);     
                                                 //    minificação     substituição  
 }
