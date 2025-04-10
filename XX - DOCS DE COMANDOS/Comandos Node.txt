@@ -2,7 +2,11 @@ npm init       --->        (cria o arquivo package.json) (escrever o nome do pac
  ** Comando usado no Node.js para iniciar o processo de criação de um novo projeto e gerar o arquivo package.json.
  Ao executar o comando npm init, será solicitado fornecer informações sobre o projeto, como nome, versão, descrição, ponto de entrada do aplicativo, autor, licença, entre outros detalhes.
 
-ir apertando enter basicamente se não tiver as informações kkk
+ir apertando enter basicamente se não tiver as informações kkk | SE NÃO QUISER ESCREVER BASTA USAR O SEGUNITE COMANDO:
+
+npm init --yes 
+
+ELE PULA AUTOMATICAMENTE TODAS AS INFORMAÇÕES
 
 escrever no package.json 
 "sass": "sass (nome da pasta desejada)/main.scss (arquivo de entrada, deve já estar criado) (nome da pasta desejada)/main.css -- watch",
