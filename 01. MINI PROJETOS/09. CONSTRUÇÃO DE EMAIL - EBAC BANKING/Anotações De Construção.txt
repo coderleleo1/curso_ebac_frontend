@@ -1,6 +1,6 @@
-- Os e-mails são arcaicos ainda de serem feitos. Devem ser montados via tags de tabelas
-	- Utilizam tags que hoje já não são mais utilizadas em sites. 
-	- O CSS deve ser aplicado de forma in-line
+- Os e-mails são arcaicos ainda de serem feitos. Devem ser montados via tags de tabelas.
+	- Utilizam tags que hoje já não são mais utilizadas em sites, como align e center. 
+	- O CSS deve ser aplicado de forma in-line.
 
 
 
