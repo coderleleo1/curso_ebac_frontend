@@ -1,9 +1,0 @@
-- Os e-mails são arcaicos ainda de serem feitos. Devem ser montados via tags de tabelas.
-	- Utilizam tags que hoje já não são mais utilizadas em sites, como align e center. 
-	- O CSS deve ser aplicado de forma in-line.
-
-
-
-- Não é possível importar fontes externas.
-
-- E-mails geralmente ocupam 600px de tela.
