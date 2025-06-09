@@ -19,7 +19,7 @@ function Champion(nome, tipoDano, classe, lane) {
 function Mago(nome, classe, lane) {
     Champion.call(this, nome, "Mágico", classe, lane)
 
-    this.setLane('Mid ou Sup')
+    this.setLane('Mid')
 }
 
 function Assassino(nome, lane){
