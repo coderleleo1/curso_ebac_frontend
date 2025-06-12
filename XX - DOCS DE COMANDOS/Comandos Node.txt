@@ -109,3 +109,30 @@ function scripts() {
 **MINIFICAÇÃO DE IMAGENS COM O PARCEL: 
 
 	1. Criar um arquivo chamado sharp.config.json na mesma pasta que o package.json
+
+
+**INSTALAÇÃO BABEL
+
+1. npm install --save-dev @babel/core @babel/cli
+
+2. Dentr	o do package.json na parte de Scripts:
+
+    "scripts": {
+        "build": "babel src(nome da pasta dos arquivos) -d dist(nome da pasta de arquivos transpilados)"
+    },
+
+** ESCREVER APÓS SCRIPTS
+
+    "browserslist": "> 0.25%",   
+
+**INSTALAÇÃO DO BROWSER LIST
+
+3. npm install --save-dev @babel/preset-env
+
+4. CRIAR um arquivos de configurações chamado de babel.config.json
+
+5. dentro do arquivo, digitar: 
+
+    {
+        "presets": ["@babel/preset-env"]
+    }
