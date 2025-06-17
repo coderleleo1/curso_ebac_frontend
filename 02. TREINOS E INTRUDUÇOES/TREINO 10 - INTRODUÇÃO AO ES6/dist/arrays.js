@@ -73,6 +73,13 @@ console.log(existeAlgumAlunoDeBackend);
 function filtraAlunosDeBackend(aluno) {
   return aluno.curso === 'Backend';
 }
+
+// ARROW FUNCTION -- ÚTIL PARA MELHORAR O CÓDIGO E UTILIZAR MENOS LINHAS
+
+var filtraAlunosDeBackend2 = function filtraAlunosDeBackend2(aluno) {
+  return aluno.curso === 'Backend';
+}; // NÃO É NECESSÁRIO () QUANDO A FUNÇÃO POSSUI APENAS UM ARGUMENTO
+
 var alunosDeBackend = alunos2.filter(filtraAlunosDeBackend); // UMA FORMA DE ECONOMIZAR ESPAÇO
 
 console.log(alunosDeBackend); // CONSOLE APENAS RETORNA O OBJETO DO LUCIO
