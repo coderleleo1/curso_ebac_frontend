@@ -1,4 +1,4 @@
-// REST, sereve como argumento de função
+// REST, serve como argumento de função
 
 function somar() {
     let soma = 0;
