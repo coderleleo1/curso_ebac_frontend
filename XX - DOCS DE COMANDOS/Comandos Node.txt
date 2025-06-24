@@ -136,3 +136,11 @@ function scripts() {
     {
         "presets": ["@babel/preset-env"]
     }
+
+
+
+** INSTALAÇÃO DO TYPESCRIPT
+
+1. npx tsc --init - para iniciar
+2. npx tsc ou npx tsc --watch - para "buildar"
+
